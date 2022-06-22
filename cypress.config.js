@@ -9,10 +9,10 @@ module.exports = {
       qualitywatcher.report(on, {
         ...config,
         reporterOptions: {
-          testRunName: "Test Run Name",
-          description: "Test Run Description",
-          projectId: 1,
-          includeAllCases: true
+          testRunName: null,
+          description: null,
+          projectId: null,
+          includeAllCases: null
         },
       });
     },

@@ -1,9 +1,9 @@
 /// <reference types="cypress" />
-const loginPage = require('../page-objects/login.page');
+const loginPage = require('../../page-objects/login.page');
 
 describe('User Authentication', function () {
 
-    it.only('[S1C1]Should login the user', () => {
+    it.only('Should login the user successfully with valid email and password', () => {
         loginPage.navigate('/login')
         cy.fixture('loginData').then(loginData => {
             loginPage.login(loginData.validEmail, loginData.validPassword)
