@@ -1,0 +1,6 @@
+{
+  "validEmail": "jane@qualitywatcher.com",
+  "validPassword": "Password!",
+  "invalidEmail": "Jane@yes.com",
+  "invalidPassword": "notpassword"
+}
