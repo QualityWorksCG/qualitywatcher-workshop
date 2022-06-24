@@ -11,8 +11,8 @@ module.exports = {
         reporterOptions: {
           testRunName: null,
           description: null,
-          projectId: null,
-          includeAllCases: null
+          projectId: null, // get project id from your QualityWatcher workspace
+          includeAllCases: null // set to true
         },
       });
     },

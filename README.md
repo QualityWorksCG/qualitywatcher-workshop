@@ -20,18 +20,19 @@ cd qualitywatcher-workshop
 npm install
 ```
 
-3. Create `.env` file user your QUALITYWATCHER_API_KEY
+4. Create `.env` file and add your QUALITYWATCHER_API_KEY
 
-[Generating a QualityWatcher API Key Guide](https://www.docs.qualitywatcher.com/docs/guides/integrating-automation-results#generating-a-qualitywatcher-api-key)
+Learn more: [Generating a QualityWatcher API Key Guide](https://www.docs.qualitywatcher.com/docs/guides/integrating-automation-results#generating-a-qualitywatcher-api-key)
 
-4. Update the `cypress.config.js` file with the relevant report details (See activity instructions for more details)
+5. Update the `cypress.config.js` file with the relevant `reporterOptions` to create your test run (testRunName, description, projectId, includeAllCases)
 
-5. Update only 1 test with a QualityWatcher Suite and Case ID
+6. Update the `it.only` test in `./cypress/e2e/authentication/login.cy.js` with a QualityWatcher [Suite and Case ID](https://www.docs.qualitywatcher.com/docs/guides/integrating-automation-results#finding-your-project-id-test-suite-ids-and-test-case-ids)
 
-6. Run the test and report to QualityWatcher (only execute this step once you have completed 1-5)
+7. Run the test and report to QualityWatcher (only execute this step once you have completed 1-6)
 
 ```sh
 npm run cy:run
 ```
 
-> Observe terminal for link to generated test run
+> Observe terminal for the link to the generated test run
+> Look for QualityWatcher in green in your terminal
